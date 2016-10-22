@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 	public void OnBeginDrag(PointerEventData eventData){
-		Debug.Log ("DRAGGING");
+		Debug.Log ("Beginning to Drag");
 	}
 
 	public void OnDrag(PointerEventData eventData){
@@ -14,6 +14,6 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 	}
 
 	public void OnEndDrag(PointerEventData eventData){
-		Debug.Log ("DRAGGING");
+		Debug.Log ("Stopped Dragging");
 	}
 }
